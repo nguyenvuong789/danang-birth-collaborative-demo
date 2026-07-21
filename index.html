@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&amp;family=Raleway:wght@400;500;600&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20260721-3">
+  <link rel="stylesheet" href="styles.css?v=20260721-4">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -95,8 +95,8 @@
 
     <section class="guide section-pad" id="guide">
       <div class="guide-card reveal">
-        <a class="guide-cover" href="output/pdf/cross-cultural-guide-to-birth.pdf" download aria-label="Download the Cross-Cultural Guide to Birth"><span>THE DANANG<br>BIRTH COLLABORATIVE</span><strong>Cross-Cultural<br>Guide to Birth</strong><small>DA NANG · VIETNAM</small></a>
-        <div class="guide-copy"><p class="eyebrow">Free birth resource</p><h2>Preparing for birth across cultures</h2><p>A practical starting point for international and cross-cultural families preparing for pregnancy and birth in Da Nang.</p><a class="text-link" href="output/pdf/cross-cultural-guide-to-birth.pdf" download>Download the guide</a></div>
+        <a class="guide-cover" href="output/pdf/cross-cultural-guide-to-birth.pdf" data-guide-trigger aria-haspopup="dialog" aria-label="Get the free Cross-Cultural Guide to Birth"><span>THE DANANG<br>BIRTH COLLABORATIVE</span><strong>Cross-Cultural<br>Guide to Birth</strong><small>DA NANG · VIETNAM</small></a>
+        <div class="guide-copy"><p class="eyebrow">Free birth resource</p><h2>Preparing for birth across cultures</h2><p>A practical starting point for international and cross-cultural families preparing for pregnancy and birth in Da Nang.</p><a class="text-link" href="output/pdf/cross-cultural-guide-to-birth.pdf" data-guide-trigger aria-haspopup="dialog">Get the free guide</a></div>
       </div>
     </section>
 
@@ -119,7 +119,33 @@
     <div><p class="footer-label">Connect</p><a href="mailto:danangbirthcollaborative@gmail.com">Email us</a><p>Da Nang, Vietnam</p><a href="contact.html">Request Info</a></div>
     <div class="footer-bottom"><p>© <span id="year"></span> The Danang Birth Collaborative</p><p>Da Nang, Vietnam</p></div>
   </footer>
-  <script src="i18n.js?v=20260721-6"></script>
-  <script src="script.js?v=20260721-2"></script>
+
+  <div class="lead-modal" id="guide-modal" hidden>
+    <div class="lead-modal-backdrop" data-guide-close></div>
+    <section class="lead-modal-panel" role="dialog" aria-modal="true" aria-labelledby="guide-modal-title" tabindex="-1">
+      <button class="lead-modal-close" type="button" data-guide-close aria-label="Close guide form"><span aria-hidden="true">&#215;</span></button>
+      <div class="lead-modal-intro">
+        <p class="eyebrow">Free birth resource</p>
+        <h2 id="guide-modal-title">Receive the guide by email.</h2>
+        <p>Share your details to access our practical guide for international and cross-cultural families preparing for birth in Da Nang.</p>
+      </div>
+      <form class="lead-modal-form" action="https://formsubmit.co/danangbirthcollaborative@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="New Cross-Cultural Birth Guide lead">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://nguyenvuong789.github.io/danang-birth-collaborative-demo/output/pdf/cross-cultural-guide-to-birth.pdf">
+        <input type="hidden" name="_autoresponse" value="Thank you for requesting our Cross-Cultural Guide to Birth. You can access it here: https://nguyenvuong789.github.io/danang-birth-collaborative-demo/output/pdf/cross-cultural-guide-to-birth.pdf">
+        <input class="lead-honeypot" type="text" name="_honey" tabindex="-1" autocomplete="off">
+        <div class="field"><label for="guide-name">Name <span aria-hidden="true">*</span></label><input id="guide-name" name="name" type="text" autocomplete="name" required></div>
+        <div class="field"><label for="guide-email">Email <span aria-hidden="true">*</span></label><input id="guide-email" name="email" type="email" autocomplete="email" required></div>
+        <p class="lead-privacy">We’ll use these details to send the guide and relevant updates. You can unsubscribe at any time.</p>
+        <button class="button" type="submit">Send me the guide <span aria-hidden="true">&#8599;</span></button>
+        <p class="lead-modal-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </div>
+
+  <script src="i18n.js?v=20260721-7"></script>
+  <script src="script.js?v=20260721-3"></script>
 </body>
 </html>
