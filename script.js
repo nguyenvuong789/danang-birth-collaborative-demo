@@ -31,8 +31,11 @@ document.querySelector('#info-form')?.addEventListener('submit', (event) => {
   const email = document.querySelector('#email').value.trim();
   const stage = document.querySelector('#stage').value;
   const message = document.querySelector('#message').value.trim();
-  const subject = encodeURIComponent(`Website inquiry from ${name}`);
-  const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nArea of support: ${stage}\n\n${message}`);
+  const isVietnamese = document.documentElement.lang === 'vi';
+  const subject = encodeURIComponent(isVietnamese ? `Yêu cầu tư vấn từ ${name}` : `Website inquiry from ${name}`);
+  const body = encodeURIComponent(isVietnamese
+    ? `Họ và tên: ${name}\nEmail: ${email}\nNội dung hỗ trợ: ${stage}\n\n${message}`
+    : `Name: ${name}\nEmail: ${email}\nArea of support: ${stage}\n\n${message}`);
   window.location.href = `mailto:danangbirthcollaborative@gmail.com?subject=${subject}&body=${body}`;
 });
 
