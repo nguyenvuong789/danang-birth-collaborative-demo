@@ -4,7 +4,7 @@
     "About the Doulas | The Danang Birth Collaborative": "Về đội ngũ doula | The Danang Birth Collaborative",
     "Contact | The Danang Birth Collaborative": "Liên hệ | The Danang Birth Collaborative",
     "Skip to content": "Bỏ qua để đến nội dung",
-    "Menu": "Danh mục",
+    "Menu": "Menu",
     "Home": "Trang chủ",
     "Services": "Dịch vụ",
     "Your journey": "Hành trình của bạn",
