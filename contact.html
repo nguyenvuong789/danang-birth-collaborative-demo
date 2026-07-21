@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Request information from The Danang Birth Collaborative in Da Nang, Vietnam.">
+  <title>Contact | The Danang Birth Collaborative</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&amp;family=Raleway:wght@400;500;600&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" id="top">
+    <a class="wordmark" href="index.html"><span class="wordmark-mark" aria-hidden="true">D</span><span>The Danang<br>Birth Collaborative</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span>Menu</span><i aria-hidden="true"></i></button>
+    <nav class="site-nav" id="site-nav" aria-label="Main navigation"><a href="index.html">Home</a><a href="index.html#services">Services</a><a href="index.html#journey">Your journey</a><a href="about.html">About</a><a href="index.html#guide">Birth guide</a><a class="button button-small" href="contact.html" aria-current="page">Request Info</a></nav>
+  </header>
+  <main id="main" class="contact-page">
+    <section class="contact-page-intro">
+      <p class="eyebrow">Da Nang, Vietnam</p><h1>Let’s begin with where you are.</h1><p>Tell us what kind of support you are looking for. If you are not sure which service fits, choose “Not Sure Yet.”</p>
+      <div class="contact-facts"><div><span>Email</span><a href="mailto:danangbirthcollaborative@gmail.com">danangbirthcollaborative@gmail.com</a></div><div><span>Service area</span><p>Da Nang, Vietnam</p></div></div>
+    </section>
+    <section class="contact-page-form">
+      <form id="info-form">
+        <div class="field"><label for="name">Name</label><input id="name" name="name" type="text" autocomplete="name" required></div>
+        <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+        <div class="field field-full"><label for="stage">Current stage or area of support</label><select id="stage" name="stage" required><option value="">Choose one</option><option>Pregnancy</option><option>Preparing for Birth</option><option>Postpartum</option><option>Fitness and Strength</option><option>Nutrition</option><option>Other Support</option><option>Not Sure Yet</option></select></div>
+        <div class="field field-full"><label for="message">Message</label><textarea id="message" name="message" rows="5" placeholder="What would you like support with?"></textarea></div>
+        <div class="field-full form-footer"><p>Selecting Request Info opens a draft in your email app. Review the message before sending, and please do not include private medical details.</p><button class="button" type="submit">Request Info <span aria-hidden="true">↗</span></button></div>
+      </form>
+    </section>
+  </main>
+  <footer class="site-footer compact-footer"><div class="footer-wordmark"><span class="wordmark-mark" aria-hidden="true">D</span><h2>Support for where<br>you are now.</h2></div><div><p class="footer-label">Connect</p><a href="mailto:danangbirthcollaborative@gmail.com">Email us</a><p>Da Nang, Vietnam</p></div><div class="footer-bottom"><p>© <span id="year"></span> The Danang Birth Collaborative</p></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
