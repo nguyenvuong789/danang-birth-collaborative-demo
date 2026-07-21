@@ -32,7 +32,7 @@ document.querySelector('#contact-form')?.addEventListener('submit', (event) => {
   const isVietnamese = document.documentElement.lang === 'vi';
   const subject = encodeURIComponent(isVietnamese ? `Yêu cầu tư vấn từ ${name}` : `Website inquiry from ${name}`);
   const body = encodeURIComponent(isVietnamese
-    ? `Họ và tên: ${name}\nEmail: ${email}\nNội dung hỗ trợ: ${stage}\n\n${message}`
+    ? `Họ và tên: ${name}\nEmail: ${email}\nNhu cầu hỗ trợ: ${stage}\n\n${message}`
     : `Name: ${name}\nEmail: ${email}\nArea of support: ${stage}\n\n${message}`);
   window.location.href = `mailto:danangbirthcollaborative@gmail.com?subject=${subject}&body=${body}`;
 });
