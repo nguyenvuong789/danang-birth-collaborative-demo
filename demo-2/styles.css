@@ -24,3 +24,4 @@ body.menu-open{overflow:hidden}
 .contact label>span[aria-hidden="true"],.soft-contact-form label>span[aria-hidden="true"]{color:#8c4a4a}
 .site-header :focus-visible{outline-color:currentColor}
 @media(max-width:580px){.text-link,.service-grid a,footer a,.soft-contact-details a{min-height:44px;display:inline-flex;align-items:center}}
+@media(max-width:900px){.service-grid article,.service-grid article:nth-child(4),.service-grid article:nth-child(5){grid-column:auto}}
