@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&amp;family=Raleway:wght@400;500;600&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=20260721-2">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -17,7 +17,7 @@
     <a class="wordmark" href="index.html"><span class="wordmark-mark" aria-hidden="true">D</span><span>The Danang<br>Birth Collaborative</span></a>
     <div class="language-switcher mobile-language-switcher" role="group" aria-label="Language"><button type="button" data-lang="en" aria-pressed="true">EN</button><span aria-hidden="true">/</span><button type="button" data-lang="vi" aria-pressed="false">VI</button></div>
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span>Menu</span><i aria-hidden="true"></i></button>
-    <nav class="site-nav" id="site-nav" aria-label="Main navigation"><a href="index.html">Home</a><a href="index.html#services">Services</a><a href="index.html#journey">Your journey</a><a href="about.html">About</a><a href="index.html#guide">Birth guide</a><div class="language-switcher desktop-language-switcher" role="group" aria-label="Language"><button type="button" data-lang="en" aria-pressed="true">EN</button><span aria-hidden="true">/</span><button type="button" data-lang="vi" aria-pressed="false">VI</button></div><a class="button button-small" href="contact.html" aria-current="page">Request Info</a></nav>
+    <nav class="site-nav" id="site-nav" aria-label="Main navigation"><a href="index.html">Home</a><a href="about.html">About</a><a href="index.html#services">Services</a><a href="index.html#journey">Your journey</a><a href="index.html#guide">Birth guide</a><div class="language-switcher desktop-language-switcher" role="group" aria-label="Language"><button type="button" data-lang="en" aria-pressed="true">EN</button><span aria-hidden="true">/</span><button type="button" data-lang="vi" aria-pressed="false">VI</button></div><a class="button button-small" href="contact.html" aria-current="page">Request Info</a></nav>
   </header>
   <main id="main" class="contact-page">
     <section class="contact-page-intro">
@@ -26,16 +26,17 @@
     </section>
     <section class="contact-page-form">
       <form id="info-form">
-        <div class="field"><label for="name">Name</label><input id="name" name="name" type="text" autocomplete="name" required></div>
-        <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required></div>
-        <div class="field field-full"><label for="stage">Current stage or area of support</label><select id="stage" name="stage" required><option value="">Choose one</option><option>Pregnancy</option><option>Preparing for Birth</option><option>Postpartum</option><option>Fitness and Strength</option><option>Nutrition</option><option>Other Support</option><option>Not Sure Yet</option></select></div>
+        <div class="field"><label for="name">Name <span aria-hidden="true">*</span></label><input id="name" name="name" type="text" autocomplete="name" required></div>
+        <div class="field"><label for="email">Email <span aria-hidden="true">*</span></label><input id="email" name="email" type="email" autocomplete="email" required></div>
+        <div class="field field-full"><label for="stage">Current stage or area of support <span aria-hidden="true">*</span></label><select id="stage" name="stage" required><option value="">Choose one</option><option>Pregnancy</option><option>Preparing for Birth</option><option>Postpartum</option><option>Fitness and Strength</option><option>Nutrition</option><option>Other Support</option><option>Not Sure Yet</option></select></div>
         <div class="field field-full"><label for="message">Message</label><textarea id="message" name="message" rows="5" placeholder="What would you like support with?"></textarea></div>
-        <div class="field-full form-footer"><p>Selecting Request Info opens a draft in your email app. Review the message before sending, and please do not include private medical details.</p><button class="button" type="submit">Request Info <span aria-hidden="true">↗</span></button></div>
+        <div class="field-full form-footer"><p>Request Info opens a draft in your email app. Review it before sending, and do not include private medical details.</p><button class="button" type="submit">Request Info <span aria-hidden="true">↗</span></button></div>
+        <p class="form-message field-full" role="status" aria-live="polite"></p>
       </form>
     </section>
   </main>
   <footer class="site-footer compact-footer"><div class="footer-wordmark"><span class="wordmark-mark" aria-hidden="true">D</span><h2>Support for where<br>you are now.</h2></div><div><p class="footer-label">Connect</p><a href="mailto:danangbirthcollaborative@gmail.com">Email us</a><p>Da Nang, Vietnam</p></div><div class="footer-bottom"><p>© <span id="year"></span> The Danang Birth Collaborative</p></div></footer>
-  <script src="i18n.js?v=20260721-5"></script>
-  <script src="script.js"></script>
+  <script src="i18n.js?v=20260721-6"></script>
+  <script src="script.js?v=20260721-2"></script>
 </body>
 </html>
