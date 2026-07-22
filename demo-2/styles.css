@@ -96,7 +96,7 @@ textarea {
   display: flex;
   align-items: center;
   gap: clamp(1rem, 2.5vw, 2.6rem);
-  font-size: 0.76rem;
+  font-size: 0.82rem;
   font-weight: 500;
 }
 .site-header nav > a:not(.nav-cta):hover {
@@ -112,7 +112,7 @@ textarea {
   border: 1px solid var(--sage-dark);
   background: var(--sage-dark);
   color: #fff;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -141,7 +141,7 @@ textarea {
 .eyebrow {
   margin: 0 0 1.2rem;
   color: var(--sage-dark);
-  font-size: 0.65rem;
+  font-size: 0.7rem;
   font-weight: 600;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -265,7 +265,7 @@ h1 {
 }
 .service-grid article > span {
   color: var(--sage-dark);
-  font-size: 0.62rem;
+  font-size: 0.68rem;
   font-weight: 600;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -281,7 +281,7 @@ h1 {
   margin-top: auto;
   align-self: flex-start;
   color: var(--sage-dark);
-  font-size: 0.72rem;
+  font-size: 0.78rem;
   font-weight: 600;
   border-bottom: 1px solid;
 }
@@ -410,7 +410,7 @@ h1 {
   display: flex;
   flex-direction: column;
   color: var(--sage-dark);
-  font-size: 0.65rem;
+  font-size: 0.7rem;
   font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -455,7 +455,7 @@ h1 {
   max-width: 350px;
   margin: 0;
   color: #59635e;
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   font-weight: 400;
   line-height: 1.55;
   letter-spacing: 0;
@@ -482,7 +482,7 @@ footer > div {
   align-items: flex-start;
   gap: 0.15rem;
   color: #cad1cc;
-  font-size: 0.75rem;
+  font-size: 0.8rem;
 }
 footer > div > p:not(.footer-label) {
   margin-bottom: 0;
@@ -490,7 +490,7 @@ footer > div > p:not(.footer-label) {
 .footer-label {
   margin: 0 0 0.55rem;
   color: #9eaaa3;
-  font-size: 0.58rem;
+  font-size: 0.68rem;
   font-weight: 600;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -501,7 +501,7 @@ footer .copyright {
   padding-top: 1.2rem;
   border-top: 1px solid #65706a;
   color: #aeb8b1;
-  font-size: 0.65rem;
+  font-size: 0.72rem;
 }
 .reveal {
   transition:
@@ -887,7 +887,7 @@ footer .copyright {
 }
 .soft-contact-details span {
   color: #e4eae6;
-  font-size: 0.62rem;
+  font-size: 0.7rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
 }
@@ -909,7 +909,7 @@ footer .copyright {
   display: flex;
   flex-direction: column;
   color: var(--sage-dark);
-  font-size: 0.65rem;
+  font-size: 0.7rem;
   font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
