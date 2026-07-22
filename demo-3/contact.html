@@ -5,24 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Request information from The Danang Birth Collaborative in Da Nang, Vietnam."
+      content="Request pregnancy, birth, postpartum, strength, or nutrition information from The Danang Birth Collaborative in Da Nang."
     />
-    <meta name="theme-color" content="#111111" />
+    <meta name="theme-color" content="#fafcfa" />
     <title>Contact | The Danang Birth Collaborative</title>
-    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&amp;family=Raleway:wght@400;500;600&amp;display=swap"
+      href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,500&amp;family=Manrope:wght@400;500;600&amp;display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css?v=20260722-5" />
+    <link rel="stylesheet" href="styles.css?v=20260722-1" />
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header" id="top">
-      <a class="wordmark" href="index.html"
-        ><span class="wordmark-mark" aria-hidden="true">D</span
+      <a
+        class="brand"
+        href="index.html"
+        aria-label="The Danang Birth Collaborative home"
+        ><span class="brand-mark" aria-hidden="true">D</span
         ><span>The Danang<br />Birth Collaborative</span></a
       >
       <div
@@ -62,52 +65,70 @@
       </nav>
     </header>
     <main id="main" class="contact-page">
-      <section class="contact-page-intro">
-        <p class="eyebrow">Da Nang, Vietnam</p>
-        <h1>Let’s begin with where you are.</h1>
-        <p>
-          Tell us what kind of support you are looking for. If you are not sure
-          which service fits, choose “Not Sure Yet.”
-        </p>
-        <div class="contact-facts">
-          <div>
-            <span>Email</span
-            ><a href="mailto:danangbirthcollaborative@gmail.com"
-              >danangbirthcollaborative@gmail.com</a
-            >
-          </div>
-          <div>
-            <span>Service area</span>
-            <p>Da Nang, Vietnam</p>
-          </div>
+      <section class="contact-intro">
+        <div>
+          <p class="eyebrow">Request information</p>
+          <h1>Begin with what you need today.</h1>
+          <p>
+            Tell us what kind of support you are looking for. If you are not
+            sure which service fits, choose “Not Sure Yet.”
+          </p>
+        </div>
+        <figure>
+          <img
+            src="https://images.unsplash.com/photo-1651083137688-492e79ac9a92?auto=format&amp;fit=crop&amp;w=1400&amp;q=85"
+            alt="A doula offering hands-on comfort during labor"
+            width="1400"
+            height="933"
+            fetchpriority="high"
+          />
+        </figure>
+        <div class="steady-band" aria-hidden="true">
+          <span>A calm first step</span><span>Da Nang, Vietnam</span>
         </div>
       </section>
-      <section class="contact-page-form">
+      <section class="contact-content section">
+        <aside>
+          <p class="eyebrow">Contact</p>
+          <h2>Start with a simple conversation.</h2>
+          <p>
+            We will listen to where you are, what you are looking for, and which
+            kind of support may fit.
+          </p>
+          <div class="contact-details">
+            <div>
+              <span>Email</span
+              ><a href="mailto:danangbirthcollaborative@gmail.com"
+                >danangbirthcollaborative@gmail.com</a
+              >
+            </div>
+            <div>
+              <span>Service area</span>
+              <p>Da Nang, Vietnam</p>
+            </div>
+          </div>
+        </aside>
         <form id="info-form">
-          <div class="field">
-            <label for="name">Name <span aria-hidden="true">*</span></label
+          <label
+            ><span>Name <span aria-hidden="true">*</span></span
             ><input
               id="name"
               name="name"
               type="text"
               autocomplete="name"
-              required
-            />
-          </div>
-          <div class="field">
-            <label for="email">Email <span aria-hidden="true">*</span></label
+              required /></label
+          ><label
+            ><span>Email <span aria-hidden="true">*</span></span
             ><input
               id="email"
               name="email"
               type="email"
               autocomplete="email"
-              required
-            />
-          </div>
-          <div class="field field-full">
-            <label for="stage"
+              required /></label
+          ><label class="full"
+            ><span
               >Current stage or area of support
-              <span aria-hidden="true">*</span></label
+              <span aria-hidden="true">*</span></span
             ><select id="stage" name="stage" required>
               <option value="">Choose one</option>
               <option>Pregnancy</option>
@@ -117,39 +138,41 @@
               <option>Nutrition</option>
               <option>Other Support</option>
               <option>Not Sure Yet</option>
-            </select>
-          </div>
-          <div class="field field-full">
-            <label for="message">Message</label
+            </select></label
+          ><label class="full"
+            ><span>Message</span
             ><textarea
               id="message"
               name="message"
               rows="5"
               placeholder="For example: postpartum support, birth preparation, or nutrition…"
             ></textarea>
-          </div>
-          <div class="field-full form-footer">
+          </label>
+          <div class="form-footer full">
             <p>
               Request Info opens a draft in your email app. Review it before
               sending, and do not include private medical details.
             </p>
-            <button class="button" type="submit">
-              Request Info <span aria-hidden="true">↗</span>
-            </button>
+            <button class="button" type="submit">Request Info</button>
           </div>
-          <p
-            class="form-message field-full"
-            role="status"
-            aria-live="polite"
-          ></p>
+          <p class="form-message full" role="status" aria-live="polite"></p>
         </form>
       </section>
+      <section class="reassurance section">
+        <p class="eyebrow">What happens next</p>
+        <h2>We listen first.</h2>
+        <p>
+          Your email opens as a draft so you can review it before sending. After
+          we receive it, the conversation begins with your questions,
+          preferences, and current stage.
+        </p>
+      </section>
     </main>
-    <footer class="site-footer compact-footer" id="footer">
-      <div class="footer-wordmark">
-        <span class="wordmark-mark" aria-hidden="true">D</span>
-        <h2>Support for where<br />you are now.</h2>
-      </div>
+    <footer class="site-footer" id="footer">
+      <a class="brand" href="#top"
+        ><span class="brand-mark" aria-hidden="true">D</span
+        ><span>The Danang<br />Birth Collaborative</span></a
+      >
       <div>
         <p class="footer-label">Explore</p>
         <a href="about.html">About our doula</a
@@ -161,12 +184,11 @@
         <a href="mailto:danangbirthcollaborative@gmail.com">Email us</a>
         <p>Da Nang, Vietnam</p>
       </div>
-      <div class="footer-bottom">
-        <p>© <span id="year"></span> The Danang Birth Collaborative</p>
-        <p>Da Nang, Vietnam</p>
-      </div>
+      <p class="copyright">
+        © <span id="year"></span> The Danang Birth Collaborative
+      </p>
     </footer>
-    <script src="i18n.js?v=20260722-2"></script>
-    <script src="script.js?v=20260722-1"></script>
+    <script src="../i18n.js?v=20260722-2"></script>
+    <script src="../script.js?v=20260722-1"></script>
   </body>
 </html>
