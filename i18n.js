@@ -157,7 +157,7 @@
     "Let’s begin with where you are.": "Hãy bắt đầu từ giai đoạn hiện tại của bạn.",
     "Tell us what kind of support you are looking for. If you are not sure which service fits, choose “Not Sure Yet.”": "Hãy chia sẻ điều bạn đang cần hỗ trợ. Nếu chưa biết dịch vụ nào phù hợp, hãy chọn “Tôi chưa chắc”.",
     "Service area": "Khu vực phục vụ",
-    "What would you like support with?": "Bạn đang cần hỗ trợ về điều gì?",
+    "For example: postpartum support, birth preparation, or nutrition…": "Ví dụ: hỗ trợ sau sinh, chuẩn bị sinh hoặc dinh dưỡng…",
     "Main navigation": "Điều hướng chính",
     "Language": "Ngôn ngữ",
     "The Danang Birth Collaborative home": "Trang chủ The Danang Birth Collaborative",

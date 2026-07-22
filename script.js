@@ -64,20 +64,33 @@ document.addEventListener("languagechange", updateMenuLabel);
 setMenuOpen(false);
 
 const revealClass = softDemo ? "visible" : "is-visible";
-const revealObserver = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (!entry.isIntersecting) return;
-      entry.target.classList.add(revealClass);
-      revealObserver.unobserve(entry.target);
-    });
-  },
-  { threshold: softDemo ? 0.1 : 0.12 },
-);
+const revealElements = document.querySelectorAll(".reveal");
 
-document
-  .querySelectorAll(".reveal")
-  .forEach((element) => revealObserver.observe(element));
+if ("IntersectionObserver" in window) {
+  const revealObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add(revealClass);
+        entry.target.classList.remove("reveal-pending");
+        revealObserver.unobserve(entry.target);
+      });
+    },
+    { threshold: softDemo ? 0.1 : 0.12 },
+  );
+
+  revealElements.forEach((element) => {
+    if (element.getBoundingClientRect().top < window.innerHeight) {
+      element.classList.add(revealClass);
+      return;
+    }
+
+    element.classList.add("reveal-pending");
+    revealObserver.observe(element);
+  });
+} else {
+  revealElements.forEach((element) => element.classList.add(revealClass));
+}
 
 const contactForm = document.querySelector("#info-form, #contact-form");
 
@@ -195,7 +208,7 @@ guideForm?.addEventListener("submit", () => {
   const status = guideForm.querySelector(".lead-modal-status");
   const submitButton = guideForm.querySelector('button[type="submit"]');
   if (status) status.textContent = getMessage("sendingGuide");
-  submitButton?.setAttribute("aria-disabled", "true");
+  if (submitButton) submitButton.disabled = true;
 });
 
 if (window.location.hash === "#guide-modal") {
