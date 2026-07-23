@@ -5,9 +5,10 @@
   --harbor: #183b3b;
   --driftwood: #c8b7a4;
   --ink: #233130;
-  --muted: #5b6a68;
+  --muted: #53615f;
   --line: #cbd8d6;
   --white: #ffffff;
+  --focus: #965631;
   --display: "Literata", Georgia, serif;
   --body: "Manrope", "Segoe UI", sans-serif;
 }
@@ -17,6 +18,7 @@
 }
 html {
   scroll-behavior: smooth;
+  -webkit-tap-highlight-color: rgba(24, 59, 59, 0.18);
 }
 body {
   margin: 0;
@@ -40,6 +42,10 @@ a {
   color: inherit;
   text-decoration: none;
 }
+a,
+button {
+  touch-action: manipulation;
+}
 button,
 input,
 select,
@@ -51,8 +57,11 @@ button {
   cursor: pointer;
 }
 :focus-visible {
-  outline: 3px solid #a8653d;
+  outline: 3px solid var(--focus);
   outline-offset: 4px;
+}
+section[id] {
+  scroll-margin-top: 96px;
 }
 .skip-link {
   position: fixed;
@@ -79,6 +88,7 @@ button {
   background: rgba(250, 252, 250, 0.96);
 }
 .brand {
+  min-height: 44px;
   display: inline-flex;
   align-items: center;
   gap: 0.8rem;
@@ -87,6 +97,10 @@ button {
   line-height: 1.3;
   letter-spacing: 0.09em;
   text-transform: uppercase;
+  transition: opacity 180ms ease;
+}
+.brand:hover {
+  opacity: 0.76;
 }
 .brand-mark {
   width: 38px;
@@ -140,7 +154,7 @@ button {
   font-size: 0.7rem;
 }
 .language-switcher button {
-  min-width: 32px;
+  min-width: 44px;
   min-height: 44px;
   padding: 0;
   border: 0;
@@ -174,7 +188,7 @@ button {
   color: var(--harbor);
 }
 .button-small {
-  min-height: 42px;
+  min-height: 44px;
   padding: 0.55rem 1rem;
 }
 .button-outline {
@@ -203,12 +217,20 @@ button {
   font-size: 0.79rem;
   font-weight: 600;
 }
+.text-link:hover,
+.support-list article > a:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.35em;
+}
 
 h1,
 h2,
 h3,
 p {
   margin-top: 0;
+}
+p {
+  text-wrap: pretty;
 }
 h1,
 h2,
@@ -237,8 +259,15 @@ h3 {
 .eyebrow {
   margin-bottom: 1rem;
   color: var(--harbor);
-  font-size: 0.68rem;
+  font-size: 0.78rem;
   font-weight: 600;
+  letter-spacing: 0.02em;
+}
+.harbor-hero .eyebrow,
+.inner-hero .eyebrow,
+.contact-intro .eyebrow,
+.lead-modal-intro .eyebrow {
+  font-size: 0.68rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
 }
@@ -391,12 +420,22 @@ h3 {
 
 .practice {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: clamp(3rem, 10vw, 10rem);
+  grid-template-columns: 0.9fr 0.62fr 1.08fr;
+  gap: clamp(2.5rem, 5vw, 5rem);
+  align-items: center;
   background: var(--salt);
 }
 .practice-intro {
   max-width: 520px;
+}
+.practice-portrait {
+  height: clamp(330px, 31vw, 440px);
+  margin: 0;
+  overflow: hidden;
+  border-radius: 4px;
+}
+.practice-portrait img {
+  filter: saturate(0.58) contrast(0.94);
 }
 .practice-copy {
   max-width: 62ch;
@@ -428,6 +467,13 @@ h3 {
   background: var(--sky-glass);
   color: var(--harbor);
   box-shadow: 22px 22px 0 rgba(255, 255, 255, 0.08);
+  transition:
+    transform 220ms ease,
+    box-shadow 220ms ease;
+}
+.guide-cover:hover {
+  transform: translateY(-4px);
+  box-shadow: 22px 28px 0 rgba(255, 255, 255, 0.1);
 }
 .guide-cover small,
 .guide-cover span {
@@ -495,9 +541,14 @@ h3 {
   font-size: 0.83rem;
 }
 .site-footer > div a {
-  min-height: 34px;
+  min-height: 44px;
   display: inline-flex;
   align-items: center;
+}
+.site-footer > div a:hover {
+  color: var(--sky-glass);
+  text-decoration: underline;
+  text-underline-offset: 0.3em;
 }
 .site-footer p {
   margin-bottom: 0;
@@ -661,6 +712,15 @@ form label > span {
 .contact-details p {
   margin-bottom: 0;
 }
+.contact-details a {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+}
+.contact-details a:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.3em;
+}
 .contact-content form {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -682,6 +742,9 @@ textarea {
   border-bottom: 1px solid #869794;
   border-radius: 0;
   background: transparent;
+}
+select {
+  background-color: var(--white);
 }
 textarea {
   resize: vertical;
@@ -742,12 +805,14 @@ textarea:focus {
   position: absolute;
   inset: 0;
   background: rgba(17, 35, 35, 0.7);
+  border: 0;
 }
 .lead-modal-panel {
   position: relative;
   width: min(900px, 100%);
   max-height: calc(100svh - 2rem);
   overflow-y: auto;
+  overscroll-behavior: contain;
   display: grid;
   grid-template-columns: 0.9fr 1.1fr;
   background: var(--salt);
@@ -945,6 +1010,10 @@ textarea:focus {
   .contact-content aside {
     max-width: 680px;
   }
+  .practice-portrait {
+    width: min(100%, 520px);
+    height: 430px;
+  }
   .guide-cover {
     width: min(70%, 350px);
   }
@@ -1007,7 +1076,8 @@ textarea:focus {
     grid-column: auto;
   }
   .journey-image > img,
-  .practitioner-image {
+  .practitioner-image,
+  .practice-portrait {
     height: 340px;
   }
   .journey-image > div {
