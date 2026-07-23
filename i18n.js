@@ -1,11 +1,10 @@
 (() => {
   const vi = {
-    "The Danang Birth Collaborative | Doula Care in Da Nang":
-      "The Danang Birth Collaborative | Chăm sóc doula tại Đà Nẵng",
-    "About the Doulas | The Danang Birth Collaborative":
-      "Về đội ngũ doula | The Danang Birth Collaborative",
-    "Contact | The Danang Birth Collaborative":
-      "Liên hệ | The Danang Birth Collaborative",
+    "DaNang Birth Collective | Doula Care in Da Nang":
+      "DaNang Birth Collective | Chăm sóc doula tại Đà Nẵng",
+    "About the Doulas | DaNang Birth Collective":
+      "Về đội ngũ doula | DaNang Birth Collective",
+    "Contact | DaNang Birth Collective": "Liên hệ | DaNang Birth Collective",
     "Skip to content": "Bỏ qua để đến nội dung",
     Menu: "Menu",
     Home: "Trang chủ",
@@ -28,13 +27,13 @@
     "Connected care in one place": "Hỗ trợ kết nối tại một nơi",
     "You should not have to navigate every change alone.":
       "Bạn không cần phải tự mình đi qua mọi thay đổi.",
-    "The Danang Birth Collaborative brings maternal support, movement, and practical wellness guidance together for women and families in Da Nang.":
-      "The Danang Birth Collaborative kết nối dịch vụ đồng hành dành cho mẹ, vận động và chăm sóc sức khỏe thiết thực cho phụ nữ và gia đình tại Đà Nẵng.",
+    "DaNang Birth Collective brings maternal support, movement, and practical wellness guidance together for women and families in Da Nang.":
+      "DaNang Birth Collective kết nối dịch vụ đồng hành dành cho mẹ, vận động và chăm sóc sức khỏe thiết thực cho phụ nữ và gia đình tại Đà Nẵng.",
     "Come to us while preparing for your first baby or welcoming another, adjusting to postpartum life, rebuilding strength, or looking for maternal resources and connection in Da Nang.":
       "Hãy đến với chúng tôi khi bạn chuẩn bị đón em bé đầu lòng hoặc chào đón thêm thành viên mới, thích nghi với cuộc sống sau sinh, phục hồi thể lực hoặc tìm kiếm nguồn lực và kết nối dành cho mẹ tại Đà Nẵng.",
     "Care starts with being heard.":
       "Mọi sự đồng hành đều bắt đầu bằng lắng nghe.",
-    "You should not have to piece together support each time your needs change. The Collaborative brings maternal support, movement, and nutrition guidance into one local network.":
+    "You should not have to piece together support each time your needs change. The Collective brings maternal support, movement, and nutrition guidance into one local network.":
       "Bạn không cần tự tìm từng nguồn hỗ trợ mỗi khi nhu cầu thay đổi. Đội ngũ của chúng tôi kết nối hỗ trợ dành cho mẹ, vận động và dinh dưỡng trong cùng một mạng lưới tại địa phương.",
     "Come to us while preparing for your first baby or welcoming another. You can also begin here as you adjust to postpartum life, rebuild strength, or look for maternal resources in Da Nang.":
       "Hãy đến với chúng tôi khi chuẩn bị đón em bé đầu lòng hoặc chào đón thêm thành viên mới. Bạn cũng có thể bắt đầu tại đây khi thích nghi với cuộc sống sau sinh, phục hồi thể lực hoặc tìm kiếm nguồn lực dành cho mẹ tại Đà Nẵng.",
@@ -101,8 +100,8 @@
     "About the doulas": "Về đội ngũ doula",
     "Meet the people behind your care.":
       "Gặp gỡ những người đồng hành cùng bạn.",
-    "The Danang Birth Collaborative brings doula care, prenatal education, postpartum support, strength training, and nutrition guidance together for women and families in Da Nang.":
-      "The Danang Birth Collaborative kết nối hỗ trợ từ doula, giáo dục tiền sản, chăm sóc sau sinh, rèn luyện thể lực và tư vấn dinh dưỡng cho phụ nữ và gia đình tại Đà Nẵng.",
+    "DaNang Birth Collective brings doula care, prenatal education, postpartum support, strength training, and nutrition guidance together for women and families in Da Nang.":
+      "DaNang Birth Collective kết nối hỗ trợ từ doula, giáo dục tiền sản, chăm sóc sau sinh, rèn luyện thể lực và tư vấn dinh dưỡng cho phụ nữ và gia đình tại Đà Nẵng.",
     "Our work is connected by one purpose: to offer steady, informed support as your needs change through pregnancy, birth, postpartum, and beyond.":
       "Chúng tôi cùng hướng đến một mục tiêu: mang đến sự hỗ trợ vững vàng và đầy đủ thông tin khi nhu cầu của bạn thay đổi qua thai kỳ, sinh nở, sau sinh và những giai đoạn tiếp theo.",
     "Contact the doulas": "Liên hệ đội ngũ doula",
@@ -155,8 +154,8 @@
     "Email us": "Gửi email",
     "Connected care begins with listening.":
       "Sự đồng hành bắt đầu từ việc lắng nghe.",
-    "The Danang Birth Collaborative brings pregnancy, birth, postpartum, movement, and nutrition support together for women and families in Da Nang.":
-      "The Danang Birth Collaborative kết nối các dịch vụ đồng hành trong thai kỳ, sinh nở, sau sinh, vận động và dinh dưỡng cho phụ nữ và gia đình tại Đà Nẵng.",
+    "DaNang Birth Collective brings pregnancy, birth, postpartum, movement, and nutrition support together for women and families in Da Nang.":
+      "DaNang Birth Collective kết nối các dịch vụ đồng hành trong thai kỳ, sinh nở, sau sinh, vận động và dinh dưỡng cho phụ nữ và gia đình tại Đà Nẵng.",
     "Why a collaborative": "Vì sao chúng tôi chọn mô hình phối hợp",
     "Support should not start over when your needs change.":
       "Sự hỗ trợ không nên bắt đầu lại từ đầu mỗi khi nhu cầu thay đổi.",
@@ -198,12 +197,12 @@
     "Start a conversation": "Bắt đầu cuộc trò chuyện",
     "Tell us what kind of support you are looking for.":
       "Hãy cho chúng tôi biết bạn đang tìm kiếm sự hỗ trợ nào.",
-    "The Danang Birth Collaborative connects women and families with support through pregnancy, birth, postpartum, movement, and nutrition.":
-      "The Danang Birth Collaborative đồng hành cùng phụ nữ và gia đình trong thai kỳ, sinh nở, sau sinh, vận động và dinh dưỡng.",
+    "DaNang Birth Collective connects women and families with support through pregnancy, birth, postpartum, movement, and nutrition.":
+      "DaNang Birth Collective đồng hành cùng phụ nữ và gia đình trong thai kỳ, sinh nở, sau sinh, vận động và dinh dưỡng.",
     "One connected approach": "Một cách tiếp cận kết nối",
     "You should not have to piece together support each time your needs change.":
       "Bạn không cần tự tìm từng nguồn hỗ trợ mỗi khi nhu cầu thay đổi.",
-    "Pregnancy, birth, and postpartum can bring new questions at every stage. The Collaborative brings maternal support, strength, and nutrition guidance into one local network.":
+    "Pregnancy, birth, and postpartum can bring new questions at every stage. The Collective brings maternal support, strength, and nutrition guidance into one local network.":
       "Mỗi giai đoạn thai kỳ, sinh nở và sau sinh đều có những câu hỏi riêng. Đội ngũ của chúng tôi kết nối hỗ trợ dành cho mẹ, thể lực và dinh dưỡng ngay tại địa phương.",
     "Begin with the service you need, or start with a conversation if you are not sure what fits.":
       "Bắt đầu với dịch vụ bạn cần hoặc trò chuyện trực tiếp với chúng tôi nếu bạn chưa chắc lựa chọn nào phù hợp.",
@@ -237,17 +236,18 @@
     "Service area": "Khu vực phục vụ",
     "For example: postpartum support, birth preparation, or nutrition…":
       "Ví dụ: hỗ trợ sau sinh, chuẩn bị sinh hoặc dinh dưỡng…",
+    "Your request is sent to our email inbox. Do not include private medical details.":
+      "Yêu cầu của bạn sẽ được gửi tới hộp thư email của chúng tôi. Không bao gồm thông tin y tế riêng tư.",
     "Main navigation": "Điều hướng chính",
     Language: "Ngôn ngữ",
-    "The Danang Birth Collaborative home":
-      "Trang chủ The Danang Birth Collaborative",
+    "DaNang Birth Collective home": "Trang chủ DaNang Birth Collective",
     "Learn about the doulas": "Tìm hiểu về đội ngũ doula",
-    "About Our Doula | The Danang Birth Collaborative":
-      "Về doula của chúng tôi | The Danang Birth Collaborative",
+    "About Our Doula | DaNang Birth Collective":
+      "Về doula của chúng tôi | DaNang Birth Collective",
     "About our doula": "Về doula của chúng tôi",
     "Learn about our doula": "Tìm hiểu về doula của chúng tôi",
-    "Through The Danang Birth Collaborative, we bring maternal support, movement, and practical wellness guidance together for women and families in Da Nang.":
-      "Thông qua The Danang Birth Collaborative, chúng tôi kết nối hỗ trợ dành cho mẹ, vận động và hướng dẫn chăm sóc sức khỏe thiết thực cho phụ nữ và gia đình tại Đà Nẵng.",
+    "Through DaNang Birth Collective, we bring maternal support, movement, and practical wellness guidance together for women and families in Da Nang.":
+      "Thông qua DaNang Birth Collective, chúng tôi kết nối hỗ trợ dành cho mẹ, vận động và hướng dẫn chăm sóc sức khỏe thiết thực cho phụ nữ và gia đình tại Đà Nẵng.",
     "We offer five connected areas of support. If you are not sure where to begin, tell us what you need and we can help you find a starting point.":
       "Chúng tôi cung cấp năm lĩnh vực hỗ trợ có sự kết nối. Nếu chưa biết bắt đầu từ đâu, hãy chia sẻ điều bạn cần để chúng tôi giúp bạn tìm điểm khởi đầu phù hợp.",
     "Meet the person behind your care.": "Gặp gỡ người sẽ đồng hành cùng bạn.",
@@ -259,8 +259,8 @@
     "Meet our doula": "Gặp gỡ doula của chúng tôi",
     "Personal care begins with listening.":
       "Sự đồng hành cá nhân bắt đầu bằng lắng nghe.",
-    "Through The Danang Birth Collaborative, we offer pregnancy, birth, postpartum, movement, and nutrition support for women and families in Da Nang.":
-      "Thông qua The Danang Birth Collaborative, chúng tôi hỗ trợ phụ nữ và gia đình trong thai kỳ, sinh nở, sau sinh, vận động và dinh dưỡng tại Đà Nẵng.",
+    "Through DaNang Birth Collective, we offer pregnancy, birth, postpartum, movement, and nutrition support for women and families in Da Nang.":
+      "Thông qua DaNang Birth Collective, chúng tôi hỗ trợ phụ nữ và gia đình trong thai kỳ, sinh nở, sau sinh, vận động và dinh dưỡng tại Đà Nẵng.",
     "Why this approach": "Vì sao chúng tôi chọn cách tiếp cận này",
     "Your support should not start over when your needs change.":
       "Sự hỗ trợ dành cho bạn không nên bắt đầu lại từ đầu mỗi khi nhu cầu thay đổi.",
@@ -280,14 +280,15 @@
     "Working with": "Đồng hành cùng",
     "Women & families": "Phụ nữ & gia đình",
     "Our training & qualifications": "Đào tạo & chuyên môn của chúng tôi",
+    "Our areas of support": "Các lĩnh vực hỗ trợ của chúng tôi",
     "Our training brings prenatal education, doula care, movement, and nutrition into one connected practice.":
       "Nền tảng chuyên môn của chúng tôi kết nối giáo dục tiền sản, hỗ trợ từ doula, vận động và dinh dưỡng trong một thực hành thống nhất.",
     "You should not have to piece together support each time your needs change. We bring maternal support, movement, and nutrition guidance into one connected practice.":
       "Bạn không cần tự tìm từng nguồn hỗ trợ mỗi khi nhu cầu thay đổi. Chúng tôi kết nối hỗ trợ dành cho mẹ, vận động và dinh dưỡng trong cùng một thực hành cá nhân.",
     "Choose from five connected areas of support. If you are not sure where to begin, tell us where you are and we can help you find a starting point.":
       "Hãy chọn từ năm lĩnh vực hỗ trợ có sự kết nối. Nếu chưa biết bắt đầu từ đâu, hãy chia sẻ giai đoạn hiện tại để chúng tôi giúp bạn tìm điểm khởi đầu phù hợp.",
-    "Through The Danang Birth Collaborative, we support women and families through pregnancy, birth, postpartum, movement, and nutrition.":
-      "Thông qua The Danang Birth Collaborative, chúng tôi đồng hành cùng phụ nữ và gia đình trong thai kỳ, sinh nở, sau sinh, vận động và dinh dưỡng.",
+    "Through DaNang Birth Collective, we support women and families through pregnancy, birth, postpartum, movement, and nutrition.":
+      "Thông qua DaNang Birth Collective, chúng tôi đồng hành cùng phụ nữ và gia đình trong thai kỳ, sinh nở, sau sinh, vận động và dinh dưỡng.",
     "Pregnancy, birth, and postpartum can bring new questions at every stage. We connect maternal support, strength, and nutrition guidance in one personal practice.":
       "Mỗi giai đoạn thai kỳ, sinh nở và sau sinh đều có những câu hỏi riêng. Chúng tôi kết nối hỗ trợ dành cho mẹ, thể lực và dinh dưỡng trong một thực hành cá nhân.",
     "Meet our practitioner": "Gặp gỡ chuyên viên của chúng tôi",
@@ -296,6 +297,8 @@
     "When you reach out, you connect directly with our practitioner. We listen first, then shape support around your questions, preferences, family, and current stage.":
       "Khi liên hệ, bạn sẽ kết nối trực tiếp với chuyên viên của chúng tôi. Chúng tôi lắng nghe trước, sau đó điều chỉnh sự hỗ trợ theo câu hỏi, lựa chọn, gia đình và giai đoạn hiện tại của bạn.",
     "A personal practice": "Một thực hành mang tính cá nhân",
+    "One listening-first relationship across birth, postpartum, strength, and nutrition support.":
+      "Một mối quan hệ đồng hành luôn bắt đầu bằng lắng nghe, xuyên suốt hỗ trợ sinh nở, sau sinh, thể lực và dinh dưỡng.",
     "Birth & postpartum doula care": "Hỗ trợ doula khi sinh & sau sinh",
     "Pregnancy & postpartum strength": "Thể lực thai kỳ & sau sinh",
     "Nutrition guidance": "Hướng dẫn dinh dưỡng",

@@ -1,6 +1,6 @@
-# The Danang Birth Collaborative - Website Concepts
+# DaNang Birth Collective - Website Concepts
 
-Three client-ready static website concepts for The Danang Birth Collaborative in Da Nang, Vietnam.
+Three client-ready static website concepts for DaNang Birth Collective in Da Nang, Vietnam.
 
 ## Live Demos
 

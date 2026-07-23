@@ -10,7 +10,7 @@ Women and families in Da Nang seeking clear, trustworthy support through pregnan
 
 ## Product Purpose
 
-Present The Danang Birth Collaborative as a connected, personal practice and help visitors understand the five available areas of support, learn about the practitioner-led approach, access the Cross-Cultural Guide to Birth, and begin a conversation. Success means visitors quickly understand what is offered, feel safe and informed, and can confidently request information.
+Present DaNang Birth Collective as a connected, personal practice and help visitors understand the five available areas of support, learn about the practitioner-led approach, access the Cross-Cultural Guide to Birth, and begin a conversation. Success means visitors quickly understand what is offered, feel safe and informed, and can confidently request information.
 
 ## Brand Personality
 

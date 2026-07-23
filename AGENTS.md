@@ -1,8 +1,8 @@
-# Project: The Danang Birth Collaborative Website Concepts
+# Project: DaNang Birth Collective Website Concepts
 
 ## Purpose
 
-This repository contains two client-ready static website concepts for The Danang Birth Collaborative in Da Nang, Vietnam. The client has not selected a final concept yet, so maintain both versions unless the user explicitly asks to remove one.
+This repository contains two client-ready static website concepts for DaNang Birth Collective in Da Nang, Vietnam. The client has not selected a final concept yet, so maintain both versions unless the user explicitly asks to remove one.
 
 - Demo 1: clean, monochrome editorial direction inspired by BHMBORN's restraint
 - Demo 2: softer sage maternal direction with a warmer, more approachable tone informed by Gentle Childbirth
@@ -44,7 +44,7 @@ Do not recreate `demo-2/script.js`. Both demos intentionally use the root `scrip
 
 ## Confirmed Business Information
 
-- Business: The Danang Birth Collaborative
+- Business: DaNang Birth Collective
 - Location/service area: Da Nang, Vietnam
 - Contact: `danangbirthcollaborative@gmail.com`
 - Services:

@@ -9,6 +9,8 @@ const messages = {
     closeMenu: "Close menu",
     openingEmail:
       "Opening your email app. If nothing happens, email us directly.",
+    sendingContact: "Sending your request…",
+    contactSent: "Your request has been sent. We will reply by email.",
     sendingGuide: "Sending your request…",
   },
   vi: {
@@ -16,6 +18,9 @@ const messages = {
     closeMenu: "Đóng menu",
     openingEmail:
       "Đang mở ứng dụng email. Nếu không có gì xảy ra, hãy gửi email trực tiếp cho chúng tôi.",
+    sendingContact: "Đang gửi yêu cầu…",
+    contactSent:
+      "Yêu cầu của bạn đã được gửi. Chúng tôi sẽ phản hồi qua email.",
     sendingGuide: "Đang gửi yêu cầu…",
   },
 };
@@ -92,7 +97,7 @@ if ("IntersectionObserver" in window) {
   revealElements.forEach((element) => element.classList.add(revealClass));
 }
 
-const contactForm = document.querySelector("#info-form, #contact-form");
+const contactForms = document.querySelectorAll("#info-form, #contact-form");
 
 const updateEmailStatus = () => {
   document
@@ -102,36 +107,75 @@ const updateEmailStatus = () => {
     });
 };
 
-contactForm?.addEventListener("submit", (event) => {
-  event.preventDefault();
-  const form = event.currentTarget;
-  const formData = new FormData(form);
-  const name = formData.get("name").trim();
-  const email = formData.get("email").trim();
-  const stage = formData.get("stage");
-  const message = formData.get("message").trim();
-  const isVietnamese = document.documentElement.lang === "vi";
-  const subject = encodeURIComponent(
-    isVietnamese ? `Yêu cầu tư vấn từ ${name}` : `Website inquiry from ${name}`,
-  );
-  const body = encodeURIComponent(
-    isVietnamese
-      ? `Họ và tên: ${name}\nEmail: ${email}\nNhu cầu hỗ trợ: ${stage}\n\n${message}`
-      : `Name: ${name}\nEmail: ${email}\nArea of support: ${stage}\n\n${message}`,
-  );
-  const status = form.querySelector(".form-message");
+const updateContactStatus = () => {
+  document
+    .querySelectorAll('.form-message[data-state="sending"]')
+    .forEach((status) => {
+      status.textContent = getMessage("sendingContact");
+    });
+  document
+    .querySelectorAll('.form-message[data-state="sent"]')
+    .forEach((status) => {
+      status.textContent = getMessage("contactSent");
+    });
+};
 
-  if (status) {
-    status.dataset.state = "opening";
-    status.textContent = getMessage("openingEmail");
-  }
+contactForms.forEach((form) => {
+  form.addEventListener("submit", (event) => {
+    if (!form.hasAttribute("data-email-draft")) {
+      const status = form.querySelector(".form-message");
+      const submitButton = form.querySelector('button[type="submit"]');
 
-  requestAnimationFrame(() => {
-    window.location.href = `mailto:danangbirthcollaborative@gmail.com?subject=${subject}&body=${body}`;
+      if (status) {
+        status.dataset.state = "sending";
+        status.textContent = getMessage("sendingContact");
+      }
+      if (submitButton) submitButton.disabled = true;
+      return;
+    }
+
+    event.preventDefault();
+    const formData = new FormData(form);
+    const name = formData.get("name").trim();
+    const email = formData.get("email").trim();
+    const stage = formData.get("stage");
+    const message = formData.get("message").trim();
+    const isVietnamese = document.documentElement.lang === "vi";
+    const subject = encodeURIComponent(
+      isVietnamese
+        ? `Yêu cầu tư vấn từ ${name}`
+        : `Website inquiry from ${name}`,
+    );
+    const body = encodeURIComponent(
+      isVietnamese
+        ? `Họ và tên: ${name}\nEmail: ${email}\nNhu cầu hỗ trợ: ${stage}\n\n${message}`
+        : `Name: ${name}\nEmail: ${email}\nArea of support: ${stage}\n\n${message}`,
+    );
+    const status = form.querySelector(".form-message");
+
+    if (status) {
+      status.dataset.state = "opening";
+      status.textContent = getMessage("openingEmail");
+    }
+
+    requestAnimationFrame(() => {
+      window.location.href = `mailto:danangbirthcollaborative@gmail.com?subject=${subject}&body=${body}`;
+    });
   });
 });
 
-document.addEventListener("languagechange", updateEmailStatus);
+if (new URLSearchParams(window.location.search).get("request") === "sent") {
+  const status = document.querySelector(".form-message");
+  if (status) {
+    status.dataset.state = "sent";
+    status.textContent = getMessage("contactSent");
+  }
+}
+
+document.addEventListener("languagechange", () => {
+  updateEmailStatus();
+  updateContactStatus();
+});
 
 const guideModal = document.querySelector("#guide-modal");
 const guidePanel = guideModal?.querySelector(".lead-modal-panel");
